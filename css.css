@@ -1,0 +1,191 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:root {
+    --backg-color : #d6e8ee;
+    --backg-color-2 : #001b48;
+    --color-1 :#97cadb;
+    --color-2 : #02457a;
+    --color-3 : #018abe;
+}
+body {
+    background-color: var(--backg-color);
+    margin: 0;
+}
+.cont {
+    margin: 10px 40px 0 40px;
+}
+.project {
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--color-3);
+    text-align: center;
+
+}
+input {
+    color: var(--backg-color);
+    margin: 7px 0;
+    padding-left: 10px;
+    height: 30px;
+    border: none;
+    background-color: var(--color-3);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    transition-duration: 0.3s;
+    width: 100%;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+}
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+input::placeholder {
+    color: var(--backg-color);
+}
+button {
+    transition-duration: 0.3s;
+    margin: 7px 0;
+    height: 30px;
+    border: none;
+    background-color: var(--color-2);
+    width: 100%;
+    cursor: pointer;
+    font-size: 19px;
+    color: var(--backg-color);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+button:hover {
+    background-color: var(--backg-color-2);
+    transform: scale(0.98);
+    -webkit-transform: scale(0.98);
+    -moz-transform: scale(0.98);
+    -ms-transform: scale(0.98);
+    -o-transform: scale(0.98);
+}
+input:focus {
+    background-color: var(--backg-color-2);
+    transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+    -moz-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    -o-transform: scale(1.02);
+}
+.price input {
+    width: 20%;
+}
+.price #total {
+    display: inline-block;
+    margin: 0;
+    background-color: var(--color-2);
+    color: var(--backg-color);
+    width: calc(20% - 16px);
+    height: 30px;
+    padding-top: 6px;
+    text-align: center;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    transition-duration: 0.3s;
+}
+.price #total::before {
+    content: "Total: ";
+    color: var(--color-1);
+}
+.search .bts {
+    display: flex;
+    justify-content: space-between;
+}
+.search button {
+    width: 40%;
+}
+th .delete button {
+    max-width: 150px;
+    font-size: 16px;
+}
+tr th {
+    border-bottom: var(--backg-color-2) solid 4px;
+}
+tr th:first-child {
+    border-top-left-radius:10px ;
+    -webkit-border-top-left-radius:10px ;
+    -moz-border-top-left-radius:10px ;
+    -ms-border-top-left-radius:10px ;
+    -o-border-top-left-radius:10px ;
+    border-bottom-left-radius:10px ;
+    -webkit-border-bottom-left-radius:10px ;
+    -moz-border-bottom-left-radius:10px ;
+    -ms-border-bottom-left-radius:10px ;
+    -o-border-bottom-left-radius:10px ;
+}
+tr th:last-child {
+    border-top-right-radius:10px ;
+    -webkit-border-top-right-radius:10px ;
+    -moz-border-top-right-radius:10px ;
+    -ms-border-top-right-radius:10px ;
+    -o-border-top-right-radius:10px ;
+    border-bottom-right-radius:10px ;
+    -webkit-border-bottom-right-radius:10px ;
+    -moz-border-bottom-right-radius:10px ;
+    -ms-border-bottom-right-radius:10px ;
+    -o-border-bottom-right-radius:10px ;
+}
+tr th {
+    border-bottom: var(--backg-color-2) solid 4px;
+}
+th {
+    background-color: var(--color-3);
+}
+td:last-child button {
+    max-width: 150px;
+}
+.out table {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    border-spacing: 0;
+}
+.out table tr td {
+    transition-duration: 0.3s;
+    border-bottom: transparent solid 1px;
+}
+.out table tr:hover td
+{
+    background-color: var(--color-1);
+    border-bottom: var(--color-2) solid 1px;
+}
+.out table th {
+    text-transform:capitalize;
+    font-weight: bold;
+}
+.out button {
+    width: 100%;
+    font-size: 17px;
+}
+footer {
+    position:relative;
+    bottom: -40px;
+    background-color: var(--backg-color-2);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    padding: 20px 0;
+}
+footer p , footer a {
+    margin: 0;
+    color: var(--color-1);
+    font-size: 19px;
+}

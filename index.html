@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <title>CRUD</title>
+</head>
+<div class="cont">
+    <div class="project"> <p>CRUD</p></div>
+    <div class="in">
+        <div class="create">
+            <div class="title">
+                <input type="text" id="title" placeholder="title">
+            </div>
+            <div class="price">
+                <input onkeyup="getTotal()" type="number" id="price" placeholder="price">
+                <input onkeyup="getTotal()" type="number" id="ads" placeholder="ads">
+                <input onkeyup="getTotal()" type="number" id="taxes" placeholder="taxes">
+                <input onkeyup="getTotal()" type="number" id="discount" placeholder="discount">
+                <p id="total">0.00</p>
+            </div>
+        </div>
+            <div class="three">
+                <input type="number" id="count" placeholder="count">
+                <input type="text" id="category" placeholder="category">
+                <button id="submit">Create</button>
+            </div>
+            <div class="search">
+                <input onkeyup="searchdata(this.value)" type="text" id="search" placeholder="Search By Title">
+                <div class="bts">
+                    <button id ="searchtitle" onclick="getsearchmood(this.id)">search title</button>
+                    <button id ="searchcategory" onclick="getsearchmood(this.id)">search category</button>
+                </div>
+            </div>
+    </div>
+    <div class="out">
+        <table>
+            <tr>
+                <th>id</th>
+                <th>title</th>
+                <th>price</th>
+                <th>taxes</th>
+                <th>ads</th>
+                <th>discount</th>
+                <th>total</th>
+                <th>category</th>
+                <th>update</th>
+                <th> <div class="delete">
+                    <button id="num" onclick="deleteall()" >Delete All</button>
+                </div> </th>
+            </tr>
+            <tbody id ="tbody">
+            </tbody>
+        </table>
+    </div>
+</div>
+    <footer>
+        <p> in: 2023</p>
+        <p><a href="https://app.netlify.com/teams/aliramadan7ussam/overview">by: Ali Ramdan</a></p>
+    </footer>
+    <script src="JS.js"></script>
+</body>
+</html>
